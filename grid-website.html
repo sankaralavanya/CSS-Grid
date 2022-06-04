@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grid Website</title>
+		<style>
+			section{
+				display:grid;
+				grid-template-rows:repeat(4,1fr);
+				grid-template-columns:repeat(5,1fr);
+				grid-gap:10px;
+				height:80vh;
+				margin:0;
+			}
+			section div{
+				background-color:lightyellow;
+				color:white;
+				padding:10px;
+			}
+			
+			section div:nth-child(1){
+				background-color:yellow;
+				list-style-type:none;
+				padding:50px;
+				grid-column:span 5;
+			}
+			section div:nth-child(2){
+				grid-column:span 5;
+				align:center;
+			}
+			section div:nth-child(3),section div:nth-child(5),section div:nth-child(6),section div:nth-child(8){
+				grid-column:span 2;
+			}
+			#a a{
+			padding:50px;
+			margin-right:20px;
+			}
+			a:hover{
+				color:purple;
+			}
+			
+		</style>
+		<body>
+			<section>
+				<div id="a">
+					<img src="../images/fc.png"/>
+					<a href="#" alt="_blank">BOY FASHION</a>
+					<a href="#" alt="_blank">GIRL FASHION</a>
+					<a href="#" alt="_blank">FOOTWEAR</a>
+					<a href="#" alt="_blank">TOYS</a>
+					<a href="#" alt="_blank">FEEDING</a>
+				</div>
+				<div>
+					<a href="#"><img src="https://cdn.fcglcdn.com/brainbees/banners/test/MKTGN_HP_TOYS_2JUN_202261225242.gif" alt="No Image"/></a>
+				</div>
+				<div>
+					<a href="#"><img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/26773.webp"/></a>
+				</div>
+				<div>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_OlUgKTd7SKHVQqzQyh3t47DDKHOQQcV7Uw&usqp=CAU"/>
+				</div>
+				<div>
+					<a href="#"><img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/26750.webp"/></a>
+				</div>
+				<div>
+					<a href="#"><img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/26776.webp"/></a>
+				</div>
+				<div>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdrRku3BYQFJtLkg-gzOulTQrlXllJRCi0qA&usqp=CAU"/>
+				</div>
+				<div>
+					<a href="#"><img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/26774.webp"/></a>
+				</div>
+				
+			</section>
+		</body>
+	</head>
+</html>
