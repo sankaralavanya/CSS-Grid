@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Grid Template1</title>
+		<style>
+			section{
+				display:grid;
+				/*background-color:lightgrey;*/
+				grid-template-areas:
+				'nav header'
+				'nav article'
+				'nav ad'
+				'nav footer';
+				grid-template-rows:80px 1fr 70px 70px;
+				grid-template-columns:20% 1fr;
+				height:80vh;
+				/*'nav header header header header'
+				'nav article article article article'
+				'nav ad ad ad ad'
+				'nav footer footer footer footer';*/
+				grid-row-gap:10px;
+				grid-column-gap:10px;
+				margin:0;
+			}
+			#nav{grid-area:nav;}
+			#header{grid-area:header;}
+			#article{grid-area:article;}
+			#ad{grid-area:ad;}
+			#footer{grid-area:footer;}
+			section div{
+				padding:1.2em;
+				background:yellowgreen;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<h1>GRID Template1</h1>
+		<section>
+			<div id="nav">Nav</div>
+			<div id="header">Header</div>
+			<div id="article">Article</div>
+			<div id="ad">Ads</div>
+			<div id="footer">Footer</div>
+		</section>
+	</body>
+</html>
